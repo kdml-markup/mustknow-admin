@@ -18,6 +18,7 @@ $uname = $_SESSION['uname'];
     <link rel="stylesheet" href="/mustknow-admin/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/mustknow-admin/plugins/select2/select2.min.css">
     <link rel="stylesheet" href="/mustknow-admin/dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="/mustknow-admin/dist/css/love.css">
     <link rel="stylesheet" href="/mustknow-admin/dist/css/mustknow.ico.css">
     <link rel="stylesheet" href="/mustknow-admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <script src="/mustknow-admin/plugins/jQuery/jQuery-2.1.4.min.js"></script>

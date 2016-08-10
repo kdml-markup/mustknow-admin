@@ -15,14 +15,15 @@ $uname = $_SESSION['uname'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MustKnow</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../plugins/select2/select2.min.css">
-    <link rel="stylesheet" href="../dist/css/AdminLTE.css">
-    <link rel="stylesheet" href="../dist/css/mustknow.ico.css">
-    <link rel="stylesheet" href="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-    <script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <link rel="stylesheet" href="../plugins/iCheck/all.css">
-    <script src="../plugins/select2/select2.full.min.js"></script>
+    <link rel="stylesheet" href="/mustknow-admin/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/mustknow-admin/plugins/select2/select2.min.css">
+    <link rel="stylesheet" href="/mustknow-admin/dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="/mustknow-admin/dist/css/love.css">
+    <link rel="stylesheet" href="/mustknow-admin/dist/css/mustknow.ico.css">
+    <link rel="stylesheet" href="/mustknow-admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <script src="/mustknow-admin/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="/mustknow-admin/plugins/iCheck/all.css">
+    <script src="/mustknow-admin/plugins/select2/select2.full.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -273,14 +274,14 @@ $uname = $_SESSION['uname'];
     </div>
     
     <!-- Bootstrap 3.3.5 -->
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow-admin/bootstrap/js/bootstrap.min.js"></script>
     <!-- DataTables -->
-    <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="../plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="/mustknow-admin/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/mustknow-admin/plugins/datatables/dataTables.bootstrap.min.js"></script>
     <!-- iCheck 1.0.1 -->
-    <script src="../plugins/iCheck/icheck.min.js"></script>
+    <script src="/mustknow-admin/plugins/iCheck/icheck.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="../dist/js/app.min.js"></script>
+    <script src="/mustknow-admin/dist/js/app.min.js"></script>
     <!-- page script -->
     <script>
         $(function () {

@@ -18,6 +18,7 @@ $uname = $_SESSION['uname'];
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="plugins/select2/select2.min.css">
     <link rel="stylesheet" href="dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="dist/css/love.css">
     <link rel="stylesheet" href="dist/css/mustknow.ico.css">
     <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
