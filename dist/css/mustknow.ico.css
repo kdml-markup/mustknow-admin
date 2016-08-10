@@ -1,0 +1,40 @@
+[class^="icon-"], [class*=" icon-"] {background-repeat:no-repeat;display:inline-block}
+
+.main-sidebar [class^="icon-"],.main-sidebar  [class*=" icon-"]{width: 10px;height: 12px;margin-right:6px}
+.icon-person{background-image:url(../../dist/img/icon-person.png)}
+.icon-corp{background-image:url(../../dist/img/icon-corp.png)}
+.icon-group{background-image: url(../../dist/img/icon-group.png)}
+
+/*
+.icon-bell:before {
+    content: "\e900";
+}
+.icon-case:before {
+    content: "\e901";
+}
+.icon-cog:before {
+    content: "\e902";
+}
+.icon-eval:before {
+    content: "\e903";
+}
+.icon-fold:before {
+    content: "\e904";
+}
+.icon-form:before {
+    content: "\e905";
+}
+.icon-home:before {
+    content: "\e906";
+}
+.icon-person:before {
+    content: "\e907";
+}
+.icon-ref:before {
+    content: "\e908";
+}
+.icon-search:before {
+    content: "\e909";
+}
+*/
+
