@@ -430,41 +430,9 @@ $uname = $_SESSION['uname'];
             </div>
         </div><!-- /.content-wrapper -->
 
-       <?php $path="main"; include("../pages/tpl/footer.tpl");?>
+       <?php include("../pages/tpl/footer.tpl");?>
        
     </div><!-- ./wrapper -->
-    
-    <!-- Modal
-    <div class="modal fade" id="teamDel" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
-      <div class="modal-dialog modal-sm" style="width:371px" id="teamDelStep1">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">해당 부서를 삭제하시겠습니까?</h4>
-          </div>
-          <div class="modal-body">
-            해당 부서를 삭제하게 되면 부서 리스트에서<br>해당 부서명이 보이지 않게 됩니다.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-black" data-dismiss="modal">취소</button>
-            <button type="button" class="btn btn-confirm">확인</button>
-          </div>
-        </div>
-      </div>
-      <!--[D] step2 : 삭제 확인 
-      <div class="modal-dialog modal-sm" style="width:371px" id="teamDelStep2">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">해당 부서를 삭제했습니다.</h4>
-          </div>
-          <div class="modal-body">
-            해당 부서에 대한 삭제 요청이 완료되었습니다.
-          </div>
-          <div class="modal-footer" style="text-align:center">
-            <button type="button" class="btn btn-confirm">확인</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
     
     <!-- Modal 글자수를 초과하였습니다. -->
     <div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">

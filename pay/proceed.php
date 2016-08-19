@@ -41,61 +41,73 @@ $uname = $_SESSION['uname'];
         <div class="content-wrapper">
            <div class="main">
                 <div class="func">
-                    <h2>Data 서비스 신청</h2>
+                    <h2>서비스 결제하기</h2>
                     <ul>
-                        <li>Data 서비스를 신청할 때에 기간을 먼저 선택한 후 구성원을 선택할 수 있으며, 기업관리자가 잔여 Data 서비스 기간이 있다면 구성원 기간만 선택하실 수 있습니다.</li>
-                        <li>관리자의 Data 서비스신청시 관리자는 콘텐츠를 열람할 수 있고, 신청한 개월수 당 00 개의 Q&A 가 제공됩니다.</li>
-                        <li>제공된 Q&A는 관리자를 포함, Data 서비스를 사용중인 기업구성원 모두가 공유하여 사용할 수 있습니다. 그 달에 사용하지 않은 Q&A는 이월되지 않습니다.</li>
-                        <li>Data 서비스는 결제 후 결제한 서비스 기간동안 모든 유료콘텐츠 Case study / Reference / Evaluation / Form을  바로 열람하실 수 있습니다.</li>
-                        <li>구성원은 이름/직급/부서명을 검색하여 한번에 선택 후 목록에 추가할 수 있으며, 목록에서 선택하여 구성원을 삭제할 수 있습니다.</li>
-                        <li>6개월 이상 Data 서비스 결제시 할인혜택을 드립니다.</li>
+                        <li>서비스 결제하기에 담긴 신청항목은 최대 30일까지 보관됩니다.</li>
+                        <li>Data 서비스는 일별계산되어 결제금액이 매일 변동되므로 신청일과 결제일이 다를 경우 결제금액이 다를 수 있습니다.</li>
+                        <li>신청하신 Data와 Form 서비스 내역 중 결제를 원하시는 항목을 체크하신 후 총 결제금액을 확인하고 결제를 진행해주세요.</li>
                     </ul>
                 </div>
 
                 <div role="main">
-                  <div class="wrap_mst" style="position:relative">
+                  <div class="wrap_mst" style="position:relative;margin-top:47px">
                       <?
                         $array = array(
                             array(
                                 "title"=>"<em class='imp'>[프로모션 10%]</em> 관리자 6개월 외 구성원 00인",
+                                "type"=>"Data",
                                 "pay"=>"3,150,000원",
                                 "time"=>"2016.06.06",
                                 "status"=>"waiting"
                             ),
                             array(
                                 "title"=>"<em class='imp'>[프로모션 20%]</em> 관리자 3개월 외 구성원 00인",
+                                "type"=>"Form",
                                 "pay"=>"3,150,000원",
                                 "time"=>"2016.06.06",
                                 "status"=>"complete"
                             ),
                             array(
                                 "title"=>"관리자 3개월",
+                                "type"=>"Form",
                                 "pay"=>"3,150,000원",
                                 "time"=>"2016.06.06",
                                 "status"=>"cancel"
                             )
                         );
                      ?>
-                      <div class="management-title"><h2>구성원 선택</h2></div>
-                      
-
-                          <div class="wrap_mst_table type4" id="wrapTable2">
+                      <div class="payinfo solid">
+                           <div class="plus">
+                               <strong>총 합계</strong><span>3,500,000 원</span><br>
+                               <strong class="promo">총 할인금액</strong><span class="promo">(-) 350,000 원</span>
+                           </div>
+                           <div class="total">
+                               <strong>총 결제금액</strong><span><em>3,150,000</em> 원</span>
+                           </div>
+                      </div>
+                       <div class="next_step">
+                           <a href="" class="btn_pay" data-toggle="modal" data-target="#myPayGo">결제</a>
+                       </div>
+                      <div class="wrap_mst_table type4 type4_2" id="wrapTable2">
                           <div class="mst_table">
                             <table id="mstTable2" class="table">
                                <colgroup>
                                  <col style="width:7%;text-align:center">
+                                 <col style="width:7%;text-align:center">
+                                 <col style="width:10%;">
                                  <col>
                                  <col style="width:10%;">
                                  <col style="width:10%;">
-                                 <col style="width:10%;">
+                                 <col style="width:72px">
                                 </colgroup>
                                 <thead>
                                   <tr>
+                                    <th><input type="checkbox"></th>
                                     <th>no.</th>
+                                    <th>유형 <i class="arraw"></i></th>
                                     <th>신청 항목</th>
                                     <th>결제금액</th>
                                     <th>신청일 <i class="arraw"></i></th>
-                                    <th>상태 <i class="arraw"></i></th>
                                     <th></th>
                                   </tr>
                                 </thead>
@@ -106,16 +118,22 @@ $uname = $_SESSION['uname'];
                                     $i = rand(0,2);
                                 ?>
                                   <tr>
+                                      <td><input type="checkbox"></td>
                                       <td><? echo $count ?></td>
+                                      <td><? echo $array[$i]['type'] ?></td>
                                       <td class="lt"><? echo $array[$i]['title'] ?></td>
                                       <td><? echo $array[$i]['pay'] ?></td>
                                       <td><? echo $array[$i]['time'] ?></td>
-                                      <td><span class="pay_btn <? echo $array[$i]['status'] ?>"></span></td>
                                       <td><button type="button" class="fold">접기/펼치기</button><!--[D] 접힐시 off 클래스 추가 --></td>
                                   </tr>
                                   <tr>
-                                      <td colspan="6" class="pay_view">
-                                       <div class="alltit">신청 항목</div>
+                                      <td colspan="7" class="pay_view">
+                                       <div class="alltit">
+                                       신청 항목
+                                          <span>결제금액</span>
+                                          <span>할인금액</span>
+                                          <span>금액</span>
+                                       </div>
                                        <div class="modu">
                                             <h4 class="tit">관리자</h4>
                                             <div class="wrap_pay_table">
@@ -165,7 +183,15 @@ $uname = $_SESSION['uname'];
                                                     while(++$count1 <= 5){
                                                     ?>
                                                       <tr>
-                                                          <td class="list"><strong>00 개월 00일</strong><span class="x"></span><strong>10</strong></td>
+                                                          <td class="list">
+                                                             <strong>00 개월 00일</strong><span class="x"></span><strong>10</strong>
+                                                              <div class="tip">
+                                                                  <button type="button" class="btn" data-toggle="dropdown" aria-expanded="true"></button>
+                                                                  <div class="text">
+                                                                     서비스 프로모션 할인 -6개월 이상 ( 10% )
+                                                                  </div>
+                                                              </div>
+                                                          </td>
                                                           <td>0,000,000원</td>
                                                           <td>- 000,000원 
                                                               <div class="tip">
@@ -184,24 +210,15 @@ $uname = $_SESSION['uname'];
                                        </div>
                                        <div class="alltit">결제 정보</div>
                                        <div class="payinfo">
-                                           <div class="rt">
-                                               <div class="plus">
-                                                   <strong>총 합계</strong><span>3,500,000 원</span><br>
-                                                   <strong class="promo">총 할인금액 (프로모션)</strong><span class="promo">(-) 350,000 원</span>
-                                               </div>
-                                               <div class="total">
-                                                   <strong>총 결제금액</strong><span>3,150,000 원</span>
-                                               </div>
-                                           </div>
                                            <div class="lt">
                                                <div class="pay_so">
                                                     <strong>총 합계</strong><span>3,500,000 원</span>
                                                     <strong>총 할인금액 (프로모션)</strong><span>350,000 원</span>
                                                </div>
-                                               <div class="pay_status">
-                                                   <span class="pay_btn <? echo $array[$i]['status'] ?>"></span>결제 대기 중입니다.
-                                               </div>
                                            </div>
+                                       </div>
+                                       <div class="paytotal">
+                                           <strong>총 결제금액</strong><span>3,150,000 원</span>
                                        </div>
                                         
                                       </td>
@@ -212,6 +229,9 @@ $uname = $_SESSION['uname'];
                           </div>
                       
                       </div>
+                  </div>
+                  <div class="wrap_pagination" style="margin-top:18px;margin-bottom:72px">
+                      <a href="#" class="delete" data-toggle="modal" data-target="#myPay">선택 삭제</a>
                   </div>
 
                     
@@ -228,6 +248,41 @@ $uname = $_SESSION['uname'];
        <?php  include("../pages/tpl/footer.tpl");?>
        
     </div><!-- ./wrapper -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myPay" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+      <div class="modal-dialog modal-sm" style="width:371px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">선택하신 항목을 삭제하시겠습니까?</h4>
+          </div>
+          <div class="modal-body">
+            선택하신 게시물을 삭제하시겠습니까?<br>삭제를 진행하시고 나면 복구할 수 없습니다.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-black" data-dismiss="modal">취소</button>
+            <button type="button" class="btn btn-confirm">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myPayGo" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+      <div class="modal-dialog modal-sm" style="width:371px">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">결제하실 항목을 선택해주세요.</h4>
+          </div>
+          <div class="modal-body">
+            원하시는 항목을 선택하여 결제를 진행해주세요.
+          </div>
+          <div class="modal-footer" style="text-align:center">
+            <button type="button" class="btn btn-confirm" data-dismiss="modal">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     
     <!-- Bootstrap 3.3.5 -->

@@ -143,7 +143,7 @@ $uname = $_SESSION['uname'];
             </div>       
         </div><!-- /.content-wrapper -->
 
-       <?php $path="main"; include("../pages/tpl/footer.tpl");?>
+       <?php  include("../pages/tpl/footer.tpl");?>
        
     </div><!-- ./wrapper -->
     

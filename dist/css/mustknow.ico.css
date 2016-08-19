@@ -3,7 +3,10 @@
 .main-sidebar [class^="icon-"],.main-sidebar  [class*=" icon-"]{width: 10px;height: 12px;margin-right:6px}
 .icon-person{background-image:url(../../dist/img/icon-person.png)}
 .icon-corp{background-image:url(../../dist/img/icon-corp.png)}
-.icon-group{background-image: url(../../dist/img/icon-group.png)}
+.icon-group{background-image:url(../../dist/img/icon-group.png)}
+.icon-data{background-image:url(../../dist/img/icon-data.png)}
+.icon-form{background-image:url(../../dist/img/icon-form.png)}
+.icon-pay{background-image:url(../../dist/img/icon-pay.png);width:11px!important}
 
 /*
 .icon-bell:before {
