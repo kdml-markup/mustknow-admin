@@ -354,13 +354,14 @@ a:focus {
     }
 }
 
-.ad {
+.ad {position:relative
 }
 .ad .b2b {height: 65px;position:relative;background: url(../../dist/img/header/business_entry.gif) center 0 no-repeat;text-indent:-9999px;background-color:#505767}
 .ad .b2b a {position:absolute;top:14px;left:50%;margin-left:286px;width:133px;height:36px;overflow:hidden;text-indent:-9999px
 }
 .ad .b2b .b2b_close{width:25px;height:25px;border:0;position:absolute;top:20px;right:23px;text-indent:-999px;overflow:hidden;background: url(../../dist/img/header/close.gif) 0 0 no-repeat}
 .ad .first {height:30px;background:#2d3541 url(../../dist/img/header/first_step.gif) 0 -2px no-repeat;text-indent:-9999px}
+.ad .logout{position:absolute;top:7px;right:16px;font-size:11px;color:#f6f6f6}
 
 .content-wrapper > .main{padding-bottom:52px;width:1374px;margin:0 auto}
 .content-wrapper > .detail-view{/*max-width:1150px*/;margin:0 224px 0 0;padding:0 51px 52px 51px;overflow:hidden}
