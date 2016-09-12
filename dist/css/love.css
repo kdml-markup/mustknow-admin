@@ -1,0 +1,581 @@
+em {
+	font-style: normal;
+}
+
+
+.comInfo {
+	overflow: hidden;
+}
+.comInfo .leftArea {
+	float: left;
+	width: 602px;
+}
+.comInfo .box2 {
+	padding: 36px 40px;
+	border: 1px solid #e1e1e1;
+	border-top: 2px solid #6b727d;
+	margin-bottom: 30px;
+}
+.comInfo .rightArea {
+	float: right;
+	width: 450px;
+}
+.comInfo p {
+	color: #4f5865;
+	font-size: 13px;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+.comInfo input {
+	width: 100%;
+	height: 39px;
+	color: #333;
+	font-size: 13px;	
+	padding: 0 8px;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 20px;
+}
+.comInfo .asterisk {
+	color: #e5583b;
+}
+.comInfo .Optional {
+	font-size: 11px;
+    font-weight: 400;
+    color: #b3bac6;
+    margin-left: 6px;
+}
+.comInfo .phone_num {
+	overflow: hidden;
+}
+.comInfo .phone_num > span {
+	position: relative;
+	float:left;
+	width: 83px;
+	height: 39px;
+	border: 1px solid #e5e5e5;
+	padding: 6px 8px 0px;
+}
+.comInfo .phone_num > span i {
+	display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 7px;
+    height: 9px;
+    background: url('/mustknow/dist/img/selectbox_arrow.png') no-repeat 100% 5px;
+}
+ul {
+	padding: 0;
+	list-style: none;
+}
+.comInfo .phone_num ul li {
+	padding: 0 8px;
+}
+.comInfo .phone_num em {
+	float: left;
+	padding: 7px;
+}
+.comInfo .phone_num input {
+	float: left;
+	width: 83px;
+	height: 39px;
+	border: 1px solid #e5e5e5;
+	padding: 0 8px;
+	vertical-align: middle;
+}
+.action {
+	height: 50px;
+}
+.action a {
+	float: right;
+	width: 132px;
+	height: 50px;
+	margin-left: 6px;
+}
+a.blue_g {
+	display: block;
+	text-align: center;
+	color: #fff;
+	padding-top: 13px;
+	background-color: #4f5865;	
+}
+a.blue2 {
+	display: block;
+	text-align: center;
+	color: #fff;
+	padding-top: 13px;
+	background-color: #3673dd;
+}
+a.light_g {
+	display: block;
+	text-align: center;
+	color: #fff;
+	padding-top: 8px;
+	background-color: #959da9;	
+}
+.logo_preview {
+	width: 205px;
+	height: 79px;
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 10px;
+}
+.logo_preview span {
+	display: block;
+	color: #cbcdd7;
+	font-size: 12px;
+	padding-top: 27px;
+}
+.upload_file {
+	position: relative;
+	overflow: hidden;
+}
+.upload_file input {
+	float:left;
+	width: 238px;
+}
+.upload_file .clear_added_file {
+	position: absolute;
+	right: 150px;
+	top: 13px;
+	width: 57px;
+	height: 21px;
+	border: 0;
+	background-color: transparent;
+	background: url(../img/clear_files.png) no-repeat 0 -19px;
+}
+.upload_file .clear_added_file:hover {
+	background-position-y: 0px;
+}
+.upload_file a {
+	float: right;
+	width: 130px;
+	height: 39px;
+	display: block;
+}
+ul.tip2 li {
+	color: #7d7c7c;
+	font-size: 12px;
+	line-height: 1.6;
+	padding-left: 6px;
+	background: url(../img/title-dot_dark.png) no-repeat 0 7px;
+}
+input.defualt_selected,
+textarea.defualt_selected {
+	color: #acacac!important;
+	background-color: #f4f5f6;
+}
+.tip2 span {
+	color: #3673dd;
+}
+.edit_industry_type {
+	overflow: hidden;
+	margin-top: 13px;
+}
+.edit_industry_type a.blue_g {
+	float:left;
+	width: 161px;
+	height: 39px;
+	padding-top: 8px;
+}
+.edit_industry_type a.light_g {
+	float: right;
+	width: 201px;
+	height: 39px;
+}
+
+
+/*modal스타일*/
+.modal-dialog textarea{
+	display: block;
+	width: 511px;
+	height: 119px;	
+    padding: 0;
+    font-size: 13px;
+    color: #4f5865;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+    padding: 7px 15px;
+    border: 1px solid #e5e5e5;
+    resize: none;
+}
+.appendix_file {
+	overflow: hidden;
+}
+.appendix_file input[type="text"] {
+	float: left;
+	width: 354px;
+	height: 39px;
+	color: #acacac;
+	border: 1px solid #e5e5e5;
+	border-right: 0;
+}
+.appendix_file label {
+	float: left;
+    width: 110px;
+    height: 39px;
+    border: 0!important;
+    background: url(../../dist/img/file2.png) 0 0 no-repeat;
+    display: inline-block;
+    padding: .5em .75em;
+    color: #999;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: 0;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.appendix_file input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.appendix_file button {
+	float: right;
+	width: 39px;
+	height: 39px;
+	border: 0;
+	background-color: transparent;
+}
+.appendix_file button.file_add {
+	background-image: url(../../dist/img/file_add.png)
+}
+.appendix_file button.file_delete {
+	background-image: url(../../dist/img/file_delete.png)
+}
+.selected_appendix_file li {
+	color: #525252;
+	font-size: 12px;
+	line-height: 1.6;
+	padding-left: 6px;
+	background: url(../img/title-dot_dark.png) no-repeat 0 7px;	
+}
+
+
+.letter_count {
+	font-size: 12px;
+    text-align: right;
+    padding-top: 3px;
+}
+.letter_count span {
+	color: #3673dd;
+}
+
+
+
+.modal_table .modal-header {
+    border-bottom: 0;
+    padding-bottom: 16px;
+    height: 0;
+}
+.modal_table .modal-header h4 {
+    color: #3673dd;
+	font-size: 14px;
+    font-weight: 500;
+}
+.modal_table .modal-header .close {
+	position: absolute;
+	top: 22px;
+	right: 14px;
+	width: 10px;
+	height: 10px;
+	border: 0;
+	background: url(../img/ic_close.png) no-repeat 0 0;
+	opacity: 1;
+}
+.modal_table .modal-body p {
+	font-weight: 500;
+	padding-bottom: 8px;
+}
+.modal_table table {
+	width: 100%;
+}
+.modal_table table th {
+	color: #525252;
+	font-weight: 500;
+	text-align: center;
+	padding: 8px 0 9px;
+	border-top: 1px solid #6b727d;
+	border-bottom: 1px solid #dddddd;
+	background-color: #fafafa;
+}
+.modal_table table td {
+	font-weight: 400;
+	text-align: center;
+	padding: 11px 0 12px;
+	border-bottom: 1px solid #dddddd;
+}
+.modal_table table button.link {
+	width: 18px;
+	height: 14px;
+	border: 0;
+	background: url(../img/btn_link_on.png) no-repeat 0 0;
+}
+.modal_table .wrap_pagination {
+	margin-top: 18px;
+	padding-bottom: 53px;
+}
+.modal_table table.sum th {
+	font-size: 10px;	
+	padding: 0px 0 1px;
+}
+.modal_table table.sum td {
+	font-size: 12px;
+	padding: 5px 0 6px;
+}
+.modal_table table.sum td strong {
+	color: #3673dd;
+	font-weight: 500;
+}
+.modal_table table.sum td em {
+	font-style: normal;
+}
+.modal_table dl {
+	margin: 0;
+	padding-left: 8px;
+	padding-top: 8px;
+	background: url(../img/title-dot.png) no-repeat 1px 16px;
+	overflow: hidden; 
+}
+.modal_table dl:first-child {
+	margin-top: 3px;
+}
+.modal_table dl span {
+	color: #525252;
+}
+.modal_table dl strong {
+	color: #3673dd;
+	font-weight: 400;
+}
+.modal_table dl dt {
+	float: left;
+	width: 82px;
+	font-size: 12px;
+	font-weight: 500;
+}
+.modal_table dl dd {
+	float: left;
+	font-weight: 400;
+	font-size: 12px;
+}
+.modal_table dl dd div {
+	width: 503px;
+	height: 120px;
+	color: #525252;
+	line-height: 23px;
+	padding: 6px 12px;
+	border: 1px solid #e5e5e5;
+	overflow: auto;
+	margin-top: 7px;
+	margin-bottom: 3px;
+}
+.modal_table dl dd strong {
+	float: left;
+	display: block;
+	margin-right: 8px;
+	margin-bottom: 7px;
+}
+.modal_table dl dd button {
+	display: block;
+	width: 52px;
+	height: 18px;
+	margin-bottom: 7px;
+	background: url(../img/box_download.png) no-repeat 0 0;
+	border: 0;
+}
+.modal-sm .modal-footer .gotolist {
+	float: left;
+	width: 80px;
+	color: #6b727d;
+	background-color: #f4f5f6
+}
+.modal_table .divided_section {
+	border-top: 1px solid #d9dadb;
+	padding-top: 25px;
+	margin-top: 23px;
+}
+
+
+.withdrawal p {
+	font-size: 16px;
+	font-weight: normal;
+	color: #3673dd;
+	margin-bottom: 23px;
+	margin-top: 45px;
+}
+.withdrawal .management-status {
+	margin-top: 21px;
+}
+.checkbox {
+	margin: 0;
+}
+.checkbox input[type="checkbox"] {
+	position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    border: 0 none;
+}
+.checkbox label {
+	display: inline-block;
+    height: 14px;
+    padding: 2px 5px 2px 0;
+    font-size: 12px;
+}
+.checkbox label i {
+	display: inline-block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 1px 8px 0 0;
+    cursor: normal;
+    background: url(/mustknow/dist/img/checkbox_blue.png) no-repeat 0 0;
+}
+.checkbox.checked label i {
+	background: url(/mustknow/dist/img/checkbox_blue.png) no-repeat -16px 0;
+}
+.checkbox label span {
+	color: #4f5865;
+    line-height: 0;
+}
+.withdrawal p span {
+	font-size: 12px;
+	color: #a5abb5;
+}
+.withdrawal .cause ul {
+	border: 1px solid #e1e1e1;
+	overflow: hidden;
+	padding: 16px 19px;	
+}
+.withdrawal .cause li {
+	float: left;
+	width: 25%;
+	height: 22px;
+	min-width: 269px;
+	margin-bottom: 4px;
+}
+.checkbox + .checkbox {
+	margin-top: 0;
+}
+.guide .guide_content {
+	height: 212px;
+	border: 1px solid #e1e1e1;
+	border-top: 0;
+	padding: 30px 12px;
+	overflow: auto;
+	margin-bottom: 20px;
+}
+.guide .guide_content p {
+	color: #525252;
+	font-size: 12px;
+	margin: 0;
+}
+.managerinfo_confirm {
+	width: 452px;
+	margin: 0 auto;
+	padding-top: 46px;
+	padding-bottom: 333px;
+}
+.managerinfo_confirm .title {
+	text-align: center;
+}
+.managerinfo_confirm .title p {
+	font-size: 20px;
+	color: #4f5865;
+	margin-bottom: 8px;
+}
+.managerinfo_confirm .title span {
+	font-size: 13px;
+	color: #838485;
+	font-weight: 300;
+}
+.managerinfo_confirm .content p {
+	font-size: 13px;
+	font-weight: 500;
+	color: #4f5865;
+	margin-bottom: 9px;
+}
+.managerinfo_confirm .content input {
+	width: 100%;
+	height: 51px;
+	border: 0;
+	background-color: #f4f5f6;
+	padding-left: 18px;
+	margin-top: 6px;
+}
+.managerinfo_confirm .content .btn_input {
+	position: relative;
+}
+.managerinfo_confirm .content .btn_input input {
+	width: 348px;
+}
+
+.managerinfo_confirm .content button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 103px;
+	height: 50px;
+	background-color: #959da9;
+	color: #fff;
+	text-align: center;
+	border: 0;
+}
+.managerinfo_confirm .action-rm {
+	border-top: 0;
+	text-align: center;
+}
+
+p span.correct {
+	display: none;
+    color: #3673dd;
+    font-size: 12px;
+    padding-left: 8px;
+    line-height: 0;
+}
+p span.incorrect {
+	display: none;
+    color: #e5583b;
+    font-size: 12px;
+    padding-left: 8px;
+    line-height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
